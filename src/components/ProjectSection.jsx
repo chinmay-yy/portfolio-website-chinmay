@@ -26,8 +26,8 @@ const projects = [
     description: "A personal portfolio website showcasing my projects and skills.",
     image: "/projects/project3.png",
     tags: ["Next.js", "TailwindCSS", "Javascript"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://portfolio-website-chinmay-7c2m-6liomeyd4.vercel.app/",
+    githubUrl: "https://github.com/chinmay-yy/portfolio-website-chinmay",
   },
 ];
 
