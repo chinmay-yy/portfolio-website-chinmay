@@ -56,11 +56,22 @@ export const ProjectsSection = () => {
             >
               {/* 🖼️ Image section with hover zoom */}
               <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-primary/10 to-secondary/20 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <ExternalLink className="h-6 w-6 text-primary" />
+                      </div>
+                      <p className="text-sm text-muted-foreground">No Image</p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* 📦 Card content section */}
