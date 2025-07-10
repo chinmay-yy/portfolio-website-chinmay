@@ -195,8 +195,8 @@ export const ContactSection = () => {
                 <div className="p-3 rounded-xl bg-primary/10">
                   <MessageCircle className="h-6 w-6 text-primary" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-foreground">
+                <div className="flex-1 text-center">
+                  <h3 className="text-2xl font-bold text-foreground mb-2">
                     Send a Message
                   </h3>
                   <p className="text-muted-foreground text-sm">
@@ -221,7 +221,7 @@ export const ContactSection = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-border/50 bg-background/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200 placeholder:text-muted-foreground/60"
+                      className="w-full px-4 py-3 rounded-xl border border-border/50 bg-background/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200 placeholder:text-muted-foreground"
                       placeholder="Your Name"
                     />
                   </div>
@@ -240,7 +240,7 @@ export const ContactSection = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-border/50 bg-background/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200 placeholder:text-muted-foreground/60"
+                      className="w-full px-4 py-3 rounded-xl border border-border/50 bg-background/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200 placeholder:text-muted-foreground"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -260,7 +260,7 @@ export const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 rounded-xl border border-border/50 bg-background/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200 placeholder:text-muted-foreground/60 resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-border/50 bg-background/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all duration-200 placeholder:text-muted-foreground resize-none text-foreground"
                     placeholder="Tell me about your project or how I can help..."
                   />
                 </div>
