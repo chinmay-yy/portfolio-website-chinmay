@@ -6,10 +6,10 @@ const projects = [
     id: 1,
     title: "AI-Powered Resume Builder",
     description: "An intelligent resume builder that uses AI to generate tailored resumes based on job descriptions and user experience. Features include smart formatting, keyword optimization, and professional templates.",
-    image: "",
+    image: "/projects/project1.png",
     tags: ["React", "Gemini API API", "TailwindCSS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/chinmay-yy/cv-builder-ai",
     icon: Brain,
     featured: true
   },
