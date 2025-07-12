@@ -7,7 +7,6 @@ const skills = [
   { name: "ChatGPT/Claude", level: 85, category: "ai" },
   { name: "Prompt Engineering", level: 75, category: "ai" },
   { name: "AI Integration", level: 70, category: "ai" },
-  { name: "OpenAI API", level: 65, category: "ai" },
 
   // Frontend skills
   { name: "HTML/CSS", level: 95, category: "frontend" },
