@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -70,7 +71,7 @@ export const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item, key) => {
             const isActive = activeSection === item.href.replace('#', '');
             return (
@@ -95,16 +96,29 @@ export const Navbar = () => {
               </a>
             );
           })}
+          
+          {/* Desktop Theme Toggle */}
+          <div className="hidden md:block">
+            <ThemeToggle />
+          </div>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50 hover:bg-primary/10 rounded-lg transition-colors duration-200"
-          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Controls */}
+        <div className="flex items-center space-x-2 md:hidden">
+          {/* Mobile Theme Toggle */}
+          <div className="md:hidden">
+            <ThemeToggle />
+          </div>
+          
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            className="p-2 text-foreground z-50 hover:bg-primary/10 rounded-lg transition-colors duration-200"
+            aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
 
         {/* Mobile Menu Overlay */}
         <div

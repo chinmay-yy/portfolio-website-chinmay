@@ -33,17 +33,17 @@ export const ThemeToggle = () => {
     };
 
     return (
-        // 🔘 Theme toggle button (top-right corner)
+        // 🔘 Theme toggle button
         <button 
             onClick={toggleTheme} 
-            className="fixed right-3 max-sm:hidden top-3 z-50 p-2 rounded-full transition-colors duration-300 focus-outline-hidden"
+            className="p-2 rounded-full transition-colors duration-300 hover:bg-primary/10 focus:outline-none"
         >
             {isDarkMode ? (
                 // 🌞 Show sun icon if dark mode is active
-                <Sun className="h-6 w-6 text-yellow-300" />
+                <Sun className="h-5 w-5 text-yellow-300" />
             ) : (
                 // 🌙 Show moon icon if light mode is active
-                <Moon className="h-6 w-6 text-blue-900" />
+                <Moon className="h-5 w-5 text-blue-900" />
             )}
         </button>
     );
