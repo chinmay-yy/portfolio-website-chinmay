@@ -5,7 +5,7 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden pt-28 md:pt-32"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
