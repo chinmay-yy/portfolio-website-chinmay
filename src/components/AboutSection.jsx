@@ -42,7 +42,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="Chinmay-Saini-Frontend-developer.pdf"
+                href="/Chinmay-Saini-Frontend-Developer-Resume.pdf"
                 download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
