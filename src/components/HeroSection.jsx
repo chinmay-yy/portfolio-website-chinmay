@@ -26,14 +26,12 @@ export const HeroSection = () => {
               {/* Animated Name */}
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 <span className="text-glow opacity-0 animate-fade-in-delay-1">
-                  Chinmay
+                  Chinmay Saini
                 </span>
                 <br />
                 <span className="text-primary opacity-0 animate-fade-in-delay-2">
                   <TypeAnimation
                     sequence={[
-                      "Saini",
-                      2000,
                       "Developer",
                       2000,
                       "Designer",
